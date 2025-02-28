@@ -254,6 +254,19 @@ h1, h2 {
     box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del carrusel */
 }
 
+/* Estilo para el carrusel */
+.carousel {
+    display: flex;
+    gap: 15px;
+    padding: 15px 0;
+    justify-content: center;
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    position: relative;
+    width: 100%; /* Asegura que el carrusel ocupe todo el ancho disponible */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    flex-wrap: no-wrap; /* Evita que los elementos se pasen a una nueva línea */
+}
+
 /* Estilo para los items del carrusel */
 .carousel-item {
     background-color: #fff; /* Fondo blanco */
@@ -269,20 +282,22 @@ h1, h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0; /* Evita que los elementos se reduzcan al tamaño de su contenido */
+    flex-shrink: 0; /* Evita que los elementos se reduzcan */
 }
 
-/* Efecto hover */
-.carousel-item:hover {
-    background-color: #D9B6C1; /* Beige suave */
-    transform: translateY(-5px); /* Efecto de elevarse al pasar el ratón */
+/* Aseguramos que el contenedor no se desborde en pantallas grandes */
+@media (min-width: 1024px) {
+    .carousel {
+        justify-content: flex-start; /* Alinea los items hacia la izquierda si es necesario */
+        overflow-x: auto; /* Permite desplazamiento horizontal si los elementos se desbordan */
+    }
 }
 
-/* Asegura que los elementos del carrusel se ajusten bien */
+/* Asegura que los elementos del carrusel se ajusten bien en pantallas pequeñas */
 @media (max-width: 768px) {
     .carousel {
-        flex-wrap: wrap; /* Permite que los items se muevan a una nueva línea si no hay suficiente espacio */
-        justify-content: flex-start; /* Alinea los elementos a la izquierda */
+        flex-wrap: wrap; /* Permite que los items se ajusten en varias filas si es necesario */
+        justify-content: center; /* Centra los elementos */
     }
     
     .carousel-item {
@@ -290,6 +305,7 @@ h1, h2 {
         font-size: 14px; /* Reduce el tamaño de la fuente */
     }
 }
+
 
 
 
