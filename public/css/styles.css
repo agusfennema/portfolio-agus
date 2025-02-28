@@ -1,0 +1,504 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Fondo blanco */
+    color: #000; /* Letras negras */
+    line-height: 1.6;
+    padding: 0 20px;
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: flex-start; /* Alinea el contenido al inicio */
+    min-height: 100vh; /* Para asegurar que ocupe toda la altura */
+}
+
+/* Navbar */
+nav {
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center; /* Centra los ítems de la lista */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 40px;
+    margin-bottom: 0%; /* Reducido el margen inferior */
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0); /* Letras negras */
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f8f3f2; /* Beige claro para el hover */
+}
+
+
+/* Secciones generales */
+section {
+    margin: 50px 0;
+}
+
+h1, h2 {
+    color: #6A4C91; /* Violeta cálido */
+}
+
+
+/* Estilo para la sección de inicio */
+#inicio {
+    text-align: center; /* Centra todo el contenido de la sección */
+    padding: 40px 0;
+    height: 100vh; /* Ocupa el 90% de la altura de la pantalla */
+    background-color: #e1dddd; /* Fondo blanco, puedes cambiarlo a otro color si lo deseas */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    margin-top: 0px;
+}
+
+#inicio h1 {
+    font-size: 15px; /* Tamaño 15 para el título */
+    font-weight: bold;
+    color: #D9B6C1; /* Beige suave */
+    margin-bottom: 20px;
+}
+
+#inicio h5 {
+    font-size: 32px; /* Gran tamaño para el subtítulo */
+    font-weight: bold; /* En negrita */
+    color: #333; /* Color negro para mejor contraste */
+    margin-bottom: 15px;
+}
+
+#inicio p {
+    font-size: 15px; /* Tamaño 15 para el texto */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#inicio div {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 20px; /* Espacio entre los botones */
+    margin-top: 20px;
+}
+
+#inicio div a {
+    background-color: #6A4C91; /* Violeta cálido */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#inicio div a:hover {
+    background-color: #D9B6C1; /* Beige suave */
+}
+
+
+
+/* Estilo para las tarjetas de los proyectos */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas por fila */
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border: 2px solid #6A4C91; /* Violeta cálido */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra por defecto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #6A4C91; /* Violeta cálido */
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card p {
+    color: #000; /* Letras negras */
+    margin-bottom: 15px;
+    font-size: 14px; /* Tamaño de fuente ajustado */
+    line-height: 1.5;
+}
+
+.card .btn {
+    background-color: #6A4C91;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #D9B6C1; /* Beige suave */
+}
+
+/* Estilo para los lenguajes (etiquetas) */
+.card .languages {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card .languages span {
+    background-color: #6A4C91;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card .languages span:hover {
+    background-color: #D9B6C1; /* Beige suave */
+}
+
+/* Estilo para la sección de proyectos */
+#proyectos {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#proyectos h2 {
+    font-size: 30px;
+    color: #6A4C91; /* Violeta cálido */
+    margin-bottom: 20px;
+}
+
+/* Estilo para la sección de habilidades */
+#habilidades {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#habilidades h2 {
+    font-size: 30px;
+    color: #6A4C91; /* Violeta cálido */
+    margin-bottom: 20px;
+}
+
+/* Estilo para el carrusel */
+.carousel {
+    display: flex;
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    gap: 15px;
+    padding: 15px 0;
+    scroll-behavior: smooth; /* Suaviza el desplazamiento */
+    justify-content: center;
+}
+
+/* Estilo para la sección de habilidades */
+#habilidades {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#habilidades h2 {
+    font-size: 30px;
+    color: #6A4C91; /* Violeta cálido */
+    margin-bottom: 20px;
+}
+
+/* Estilo para el carrusel */
+.carousel {
+    display: flex;
+    gap: 15px;
+    padding: 15px 0;
+    justify-content: center;
+    overflow: hidden; /* Oculta el contenido que se desborda */
+    position: relative;
+}
+
+/* Estilo para los items del carrusel */
+.carousel-item {
+    background-color: #fff; /* Fondo blanco */
+    color: #6A4C91; /* Violeta cálido */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid #6A4C91; /* Bordes violeta cálido */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    min-width: 120px; /* Ancho mínimo para cada item */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Efecto hover */
+.carousel-item:hover {
+    background-color: #D9B6C1; /* Beige suave */
+    transform: translateY(-5px); /* Efecto de elevarse al pasar el ratón */
+}
+
+
+/* Estilo para la sección de contacto */
+#contacto {
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px 0;
+    background-color: #F5F5F5; /* Fondo gris claro */
+}
+
+#contacto h2 {
+    color: #6A4C91; /* Título en violeta cálido */
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#contacto a {
+    margin: 0 10px;
+    font-size: 18px;
+    color: #6A4C91;
+    font-weight: bold;
+}
+
+#contacto a:hover {
+    color: #D9B6C1; /* Beige suave al hacer hover */
+}
+
+#contacto i {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+
+/* Estilo para la sección de contacto */
+#contacto {
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px 0; /* Espaciado alrededor del contenido */
+    background-color: #F5F5F5; /* Fondo gris claro para toda la sección */
+}
+
+/* Estilo para los enlaces de redes sociales */
+#contacto a {
+    padding: 10px 20px;
+    background-color: #6A4C91; /* Color violeta */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center; /* Alinea el ícono y texto */
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+#contacto a:hover {
+    background-color: #D9B6C1; /* Beige suave */
+}
+
+/* Estilo para los íconos dentro de los enlaces */
+#contacto i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    font-size: 20px; /* Tamaño del ícono */
+}
+
+
+/* Estilo de la sección de 'Sobre mí' */
+#sobre-mi {
+    display: flex;
+    justify-content: space-between; /* Espacio entre el texto y la imagen */
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Contenedor del contenido, para manejar el texto y la imagen */
+.contenido-sobre-mi {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Estilo para el texto de la sección */
+.texto-sobre-mi {
+    flex: 1; /* El texto ocupa el espacio restante */
+    padding-right: 30px; /* Un poco de espacio entre el texto y la imagen */
+}
+
+/* Estilo para la imagen */
+.foto-sobre-mi {
+    flex: 0 0 250px; /* La imagen tiene un tamaño fijo */
+    display: flex;
+    justify-content: center;
+}
+
+.foto-sobre-mi img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para la imagen */
+    object-fit: cover; /* Asegura que la imagen se recorte correctamente si es necesario */
+}
+
+/* Estilo para los párrafos */
+#sobre-mi p {
+    margin-bottom: 20px;
+}
+
+
+/* Estilo de la sección de 'Educación' */
+#educacion {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Fondo suave */
+}
+
+#educacion h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #6A4C91; /* Color violeta para el título */
+    margin-bottom: 30px;
+}
+
+.educacion-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.educacion-item p {
+    margin: 0;
+}
+
+.educacion-item .fecha {
+    font-size: 16px;
+    color: #888; /* Color gris para la fecha */
+    margin-top: 10px;
+}
+
+.educacion-item .institucion {
+    color: #6A4C91;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.educacion-item .institucion:hover {
+    color: #D9B6C1; /* Color beige suave al pasar el ratón */
+}
+
+.educacion-detalles {
+    margin-left: 20px;
+}
+
+/* Estilo de la sección de 'Experiencia' */
+#experiencia {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Fondo suave */
+}
+
+#experiencia h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #6A4C91; /* Color violeta para el título */
+    margin-bottom: 30px;
+}
+
+.experiencia-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experiencia-item p {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.experiencia-item .rol {
+    font-weight: bold;
+    color: #6A4C91; /* Color violeta */
+}
+
+.experiencia-item .institucion {
+    color: #888;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.experiencia-item .descripcion ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+    text-align: left;
+}
+
+.experiencia-item .descripcion li {
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* Estilo para los botones de la sección 'Inicio' */
+#inicio div a {
+    background-color: #6A4C91; /* Violeta cálido */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+#inicio div a:hover {
+    background-color: #D9B6C1; /* Beige suave */
+}
