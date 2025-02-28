@@ -250,6 +250,8 @@ h1, h2 {
     justify-content: center;
     overflow: hidden; /* Oculta el contenido que se desborda */
     position: relative;
+    width: 100%; /* Asegura que el carrusel ocupe todo el ancho de la pantalla */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del carrusel */
 }
 
 /* Estilo para los items del carrusel */
@@ -267,6 +269,7 @@ h1, h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0; /* Evita que los elementos se reduzcan al tamaño de su contenido */
 }
 
 /* Efecto hover */
@@ -274,6 +277,20 @@ h1, h2 {
     background-color: #D9B6C1; /* Beige suave */
     transform: translateY(-5px); /* Efecto de elevarse al pasar el ratón */
 }
+
+/* Asegura que los elementos del carrusel se ajusten bien */
+@media (max-width: 768px) {
+    .carousel {
+        flex-wrap: wrap; /* Permite que los items se muevan a una nueva línea si no hay suficiente espacio */
+        justify-content: flex-start; /* Alinea los elementos a la izquierda */
+    }
+    
+    .carousel-item {
+        min-width: 100px; /* Reduce el tamaño mínimo en pantallas pequeñas */
+        font-size: 14px; /* Reduce el tamaño de la fuente */
+    }
+}
+
 
 
 /* Estilo para la sección de contacto */
