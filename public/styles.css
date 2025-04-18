@@ -212,6 +212,8 @@ h1, h2 {
 #habilidades {
     margin-top: 40px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #habilidades h2 {
@@ -223,6 +225,7 @@ h1, h2 {
 /* Estilo para el carrusel */
 .carousel {
     display: flex;
+    width: 100%;
     overflow-x: auto; /* Permite el desplazamiento horizontal */
     gap: 15px;
     padding: 15px 0;
@@ -230,42 +233,6 @@ h1, h2 {
     justify-content: center;
 }
 
-/* Estilo para la sección de habilidades */
-#habilidades {
-    margin-top: 40px;
-    text-align: center;
-}
-
-#habilidades h2 {
-    font-size: 30px;
-    color: #6A4C91; /* Violeta cálido */
-    margin-bottom: 20px;
-}
-
-/* Estilo para el carrusel */
-.carousel {
-    display: flex;
-    gap: 15px;
-    padding: 15px 0;
-    justify-content: center;
-    overflow: hidden; /* Oculta el contenido que se desborda */
-    position: relative;
-    width: 100%; /* Asegura que el carrusel ocupe todo el ancho de la pantalla */
-    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del carrusel */
-}
-
-/* Estilo para el carrusel */
-.carousel {
-    display: flex;
-    gap: 15px;
-    padding: 15px 0;
-    justify-content: center;
-    overflow: hidden; /* Oculta el contenido que se desborda */
-    position: relative;
-    width: 100%; /* Asegura que el carrusel ocupe todo el ancho disponible */
-    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
-    flex-wrap: no-wrap; /* Evita que los elementos se pasen a una nueva línea */
-}
 
 /* Estilo para los items del carrusel */
 .carousel-item {
@@ -277,7 +244,7 @@ h1, h2 {
     border-radius: 20px;
     border: 2px solid #6A4C91; /* Bordes violeta cálido */
     transition: transform 0.3s ease, background-color 0.3s ease;
-    min-width: 120px; /* Ancho mínimo para cada item */
+    min-width: 160px; /* Ancho mínimo para cada item */
     text-align: center;
     display: flex;
     align-items: center;
@@ -374,43 +341,40 @@ h1, h2 {
 
 /* Estilo de la sección de 'Sobre mí' */
 #sobre-mi {
-    display: flex;
-    justify-content: space-between; /* Espacio entre el texto y la imagen */
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 0;
+    overflow: hidden; /* para contener el float */
 }
 
-/* Contenedor del contenido, para manejar el texto y la imagen */
-.contenido-sobre-mi {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-/* Estilo para el texto de la sección */
-.texto-sobre-mi {
-    flex: 1; /* El texto ocupa el espacio restante */
-    padding-right: 30px; /* Un poco de espacio entre el texto y la imagen */
-}
-
-/* Estilo para la imagen */
 .foto-sobre-mi {
-    flex: 0 0 250px; /* La imagen tiene un tamaño fijo */
-    display: flex;
-    justify-content: center;
+    /* float: left;
+    width: 250px;
+    margin-right: 30px; */
+    float: left; /* Hacemos que la imagen flote a la izquierda */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    width: 150px; /* Tamaño de la imagen */
+    height: 150px; /* Altura igual para mantener el círculo */
+    border-radius: 50%; /* Para que sea circular */
+    object-fit: cover;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 .foto-sobre-mi img {
+    float: left;
     width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para la imagen */
-    object-fit: cover; /* Asegura que la imagen se recorte correctamente si es necesario */
+    object-fit: cover;
+    shape-outside: circle(50%);
+    clip-path: circle(50%);
+    border-radius: 50%;
+    
 }
+
 
 /* Estilo para los párrafos */
 #sobre-mi p {
-    margin-bottom: 20px;
+    /* font-size: clamp(1vh, 4vw, 3vh); */
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 
@@ -563,6 +527,18 @@ h1, h2 {
         align-items: center;
     }
 
+    #contacto a  {
+        margin-top: 10px;
+    }
+
+    .foto-sobre-mi {
+    float: left;
+    width: 200px;
+    height: 200px;
+    shape-outside: circle(50%);
+    clip-path: circle(50%);
+    border-radius: 50%;
+    }
     
 }
 
@@ -582,4 +558,6 @@ h1, h2 {
     .card p {
         font-size: 14px;
     }
+
+
 }
