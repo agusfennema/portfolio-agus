@@ -535,9 +535,9 @@ h1, h2 {
     float: left;
     width: 200px;
     height: 200px;
-    shape-outside: circle(50%);
-    clip-path: circle(50%);
-    border-radius: 50%;
+    shape-outside: circle(30%);
+    clip-path: circle(30%);
+    border-radius: 30%;
     }
     
 }
