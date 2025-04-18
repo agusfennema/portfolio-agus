@@ -532,7 +532,7 @@ h1, h2 {
     }
 
     .foto-sobre-mi {
-    float: left;
+    float: center;
     width: 200px;
     height: 200px;
     /* shape-outside: circle(10%); */
