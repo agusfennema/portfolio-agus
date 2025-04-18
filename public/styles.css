@@ -363,8 +363,8 @@ h1, h2 {
     float: center;
     width: 100%;
     object-fit: cover;
-    shape-outside: circle(50%);
-    clip-path: circle(50%);
+    shape-outside: circle(30%);
+    clip-path: circle(30%);
     border-radius: 30%;
     
 }
