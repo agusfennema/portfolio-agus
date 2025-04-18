@@ -340,34 +340,38 @@ h1, h2 {
 
 
 /* Estilo de la sección de 'Sobre mí' */
+
 #sobre-mi {
     margin: 50px 0;
     overflow: hidden; /* para contener el float */
 }
 
 .foto-sobre-mi {
-    text-align: center;
+    float: left; /* Hacemos que la imagen flote a la izquierda */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    width: 150px; /* Tamaño de la imagen */
+    height: 150px; /* Altura igual para mantener el círculo */
+    border-radius: 50%; /* Para que sea circular */
+    object-fit: cover;
     margin-right: 20px;
-    width: 150px;
-    height: 150px;
-    
+    margin-bottom: 10px;
 }
 
 .foto-sobre-mi img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    float: left;
+    width: 100%;
     object-fit: cover;
+    shape-outside: circle(50%);
+    clip-path: circle(50%);
+    border-radius: 50%;
+    
 }
 
-
-/* Estilo para los párrafos */
 #sobre-mi p {
     /* font-size: clamp(1vh, 4vw, 3vh); */
     font-size: 1.1rem;
     line-height: 1.5;
 }
-
 
 /* Estilo de la sección de 'Educación' */
 #educacion {
