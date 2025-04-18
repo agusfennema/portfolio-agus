@@ -530,9 +530,9 @@ h1, h2 {
     float: center;
     width: 200px;
     height: 200px;
-    shape-outside: circle(10%); 
-    clip-path: circle(10%); 
-    border-radius: 5%;
+    /* shape-outside: circle(10%); */
+    /* clip-path: circle(10%); */
+    /* border-radius: 5%; */
     }
     
 }
