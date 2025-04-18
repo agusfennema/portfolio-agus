@@ -528,8 +528,8 @@ h1, h2 {
 
     .foto-sobre-mi {
     float: center;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     shape-outside: circle(10%); 
     clip-path: circle(10%); 
     border-radius: 5%;
