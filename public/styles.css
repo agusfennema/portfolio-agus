@@ -528,11 +528,11 @@ h1, h2 {
 
     .foto-sobre-mi {
     float: center;
-    width: 200px;
-    height: 200px;
-    /* shape-outside: circle(10%); */
-    /* clip-path: circle(10%); */
-    /* border-radius: 5%; */
+    width: 150px;
+    height: 150px;
+    shape-outside: circle(10%); 
+    clip-path: circle(10%); 
+    border-radius: 5%;
     }
     
 }
